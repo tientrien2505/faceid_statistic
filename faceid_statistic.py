@@ -13,7 +13,7 @@ df_haar_2k_fullencode = pd.read_csv('haar_2k_fullencode_statistic.csv')
 df_haar_2k_200x200_fullencode = pd.read_csv('haar_2k_200x200_fullencode_statistic.csv')
 
 st.title('Faceid Statistic')
-col0_0, col0_1, col0_2, col0_3, col0_4, col0_5, col0_6 = st.beta_columns(7)
+col0_0, col0_1, col0_2, col0_3, col0_4, col0_5, col0_6 = st.columns(7)
 labels = ['load_body_time', 'str2img_time', 'detection_time',
         'img2str_time', 'create_message_time', 'send_time']
 df_haar['total'] = 0
@@ -53,7 +53,7 @@ with col0_6:
     st.write('### Haar 2k 200x200 Full Encode')
     st.write(df_haar_2k_200x200_fullencode)
 labels.append('total')
-col1_0, col1_1 = st.beta_columns((1, 2))
+col1_0, col1_1 = st.columns((1, 2))
 selections = {}
 with col1_0:
     st.write('### Select params')
